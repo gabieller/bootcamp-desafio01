@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 01</title>
-    <link rel = "stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
 </head>
+
 <body>
     <h1>User Search</h1>
 
-    <div id = "search">
-        <input type="text" id = "inputUser" placeholder="Seach" />
-        <label for="inputUser">User Name</label>
-        <input type="submit" id = "submitSearch" value="SEARCH"/>
+    <div id="search">
+        <input type="text" id="inputUser" placeholder="Seach" />
+        <label for="inputUser">Name</label>
+        <input type="submit" id="submitSearch" onkeyup="searchByName()" value="SEARCH"/>
     </div>
 
-    <div class = "container">
+    <div class="container">
 
-        <div class = "user-filter">
-            <span id = "count-users"></span> users found
-            <div id = "show-users"></div>
+        <div class="user-filter">
+            <span id="countUser"></span> users found
+            <div id="showUsers"></div>
         </div>
 
-        <div class = "statistics">
+        <div class="statistics">
             <span>Statistics</span>
-            <div class = "show-stats">
+            <div class="user-stats">
                 <ul>
-                    <li>Male:<span id ="countM"></span></li>
-                    <li>Female: <span id ="countF"></span></li>
-                    <li>Sum Ages: <span id ="sumAge"></span></li>
-                    <li>Average Age: <span id ="avgAge"></span></li>
+                    <li>Male:<span id="countM"></span></li>
+                    <li>Female: <span id="countF"></span></li>
+                    <li>Sum Ages: <span id="sumAge"></span></li>
+                    <li>Average Age: <span id="avgAge"></span></li>
                 </ul>
             </div>
         </div>
     </div>
-    
+
 </body>
 <script src="./js/script.js"></script>
+
 </html>

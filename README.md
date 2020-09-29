@@ -1,7 +1,6 @@
-## User Search
+## User Search Project
 
-Create an application to filter users and show some statistics from a determinated filter
-
+Create an application to filter users and show some statistics from a determined filter
 
 ## Technology 
 
